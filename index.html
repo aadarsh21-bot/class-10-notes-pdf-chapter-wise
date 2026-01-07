@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AR Class 10 Solutions</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+body {
+    background: black;
+    color: #00aaff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-shadow: 0 0 12px #00aaff, 0 0 25px #00aaff;
+}
+
+.box {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 2px dashed #00aaff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00aaff;
+}
+
+a {
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chapter-btn {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 16px;
+    border: 1px solid #00aaff;
+    border-radius: 8px;
+}
+
+.search-box {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.pdf a {
+    display: block;
+    margin: 6px 0;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 50%;
+    font-size: 28px;
+    box-shadow: 0 0 15px #25D366;
+}
+</style>
+
+<script>
+function searchPDF() {
+    let input = document.getElementById("search").value.toLowerCase();
+    let pdfs = document.getElementsByClassName("pdf");
+
+    for (let i = 0; i < pdfs.length; i++) {
+        let text = pdfs[i].innerText.toLowerCase();
+        pdfs[i].style.display = text.includes(input) ? "block" : "none";
+    }
+}
+</script>
+</head>
+
+<body>
+
+<h1>Welcome to AR Class 10 Solutions</h1>
+<p>Hello, I am <b>AADARSH RAJ</b>. Download free Class 10 chapter-wise PDFs.</p>
+
+<!-- Instagram -->
+<p>
+<a href="https://www.instagram.com/the_shadow__01___" target="_blank">
+<i class="fa-brands fa-instagram"></i> @the_shadow__01___
+</a>
+</p>
+
+<!-- Search -->
+<div class="box">
+<h2>🔍 Search PDFs</h2>
+<input id="search" class="search-box" type="text" placeholder="Search chapter..." onkeyup="searchPDF()">
+</div>
+
+<!-- Subjects -->
+<div class="box">
+<h2>📘 Subjects</h2>
+<a href="#maths" class="chapter-btn">Maths</a>
+<a href="#science" class="chapter-btn">Science</a>
+<a href="#sst" class="chapter-btn">SST</a>
+<a href="#english" class="chapter-btn">English</a>
+</div>
+
+<!-- Maths -->
+<div class="box" id="maths">
+<h2>📐 Maths Chapters</h2>
+<div class="pdf"><a href="pdfs/maths-ch1.pdf" download>Ch 1 – Real Numbers</a></div>
+<div class="pdf"><a href="pdfs/maths-ch2.pdf" download>Ch 2 – Polynomials</a></div>
+</div>
+
+<!-- Science -->
+<div class="box" id="science">
+<h2>🔬 Science Chapters</h2>
+<div class="pdf"><a href="pdfs/science-ch1.pdf" download>Chemical Reactions</a></div>
+<div class="pdf"><a href="pdfs/science-ch2.pdf" download>Acids, Bases & Salts</a></div>
+</div>
+
+<!-- SST -->
+<div class="box" id="sst">
+<h2>🌍 SST Chapters</h2>
+<div class="pdf"><a href="pdfs/sst-history.pdf" download>History Notes</a></div>
+<div class="pdf"><a href="pdfs/sst-geography.pdf" download>Geography Notes</a></div>
+</div>
+
+<!-- English -->
+<div class="box" id="english">
+<h2>📖 English Chapters</h2>
+<div class="pdf"><a href="pdfs/english-first-flight.pdf" download>First Flight</a></div>
+<div class="pdf"><a href="pdfs/english-footprints.pdf" download>Footprints Without Feet</a></div>
+</div>
+
+<p>Thanks for visiting | WhatsApp: <b>9128703503</b></p>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/919128703503" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
